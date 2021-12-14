@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/favicon.png" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/search.css" />
+		<title>Toronto Today</title>
+	</head>
+	<body>
+		<header class="header-container">
+			<figure class="logo">
+				<a href="index.html">
+					<img src="assets/images/logo.svg" alt="logo" />
+				</a>
+			</figure>
+			<nav class="header-nav-items">
+				<a href="index.html">Articles</a>
+				<a href="upcoming.html">Events</a>
+				<a href="videos.html">Videos</a>
+				<a href="search.html" class="selected">Search</a>
+			</nav>
+		</header>
+		<main>
+			<div id="content-wrapper">
+				<div class="search-bar">
+					<form action="/search.html">
+						<input
+							type="search"
+							id="search"
+							name="q"
+							aria-label="Search through site content"
+						/>
+						<input
+							type="submit"
+							value="Search"
+							id="search-button"
+							onclick="updateList()"
+						/>
+					</form>
+				</div>
+				<div id="search-results"></div>
+			</div>
+		</main>
+		<footer class="footer-container">
+			<div class="nav-bars">
+				<nav class="left-footer-nav-items">
+					<a href="aboutus.html">About Us</a>
+					<a href="faqpage.html">FAQ</a>
+					<a href="newsletter.html">Newsletters</a>
+					<a href="subscription.html">Subscriptions</a>
+					<a href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use">Terms of Service</a>
+				</nav>
+				<nav class="right-footer-nav-items">
+					<a href="">
+						<img src="assets/images/facebook.svg" alt="facebook link">
+					</a>
+					<a href="">
+						<img src="assets/images/twitter.svg" alt="twitter link">
+					</a>
+					<a href="">
+						<img src="assets/images/tiktok.svg" alt="tiktok link">
+					</a>
+					<a href="">
+						<img src="assets/images/youtube.svg" alt="youtube link">
+					</a>
+					<a href="">
+						<img src="assets/images/flickr.svg" alt="flickr link">
+					</a>
+				</nav>
+			</div>
+			<p class="copyright">&copy; 2021 Toronto Today</p>
+		</footer>
+		<script type="module" src="js/search.js"></script>
+	</body>
+</html>
